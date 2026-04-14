@@ -1,5 +1,5 @@
 {
-  "name": "adaptui",
+  "name": "manage-code-components",
   "version": "0.1.0",
   "description": "Productive React components with Tailwind CSS, shadcn/ui, smart theming and React Hook Form integration",
   "author": "Carlos Henrique",

@@ -3,6 +3,7 @@ name: Deploy Storybook
 on:
   push:
     branches: [main, master]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -36,7 +37,8 @@ jobs:
           CI: true
           STORYBOOK_BASE_PATH: /${{ github.event.repository.name }}/
 
-      - uses: actions/configure-pages@v4
+      # configure-pages não é necessário para artefacto estático; além disso falha (404)
+      # até Pages estar ativo em Settings → Pages → Source: GitHub Actions (uma vez).
 
       - uses: actions/upload-pages-artifact@v3
         with:
