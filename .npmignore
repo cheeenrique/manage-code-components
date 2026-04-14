@@ -1,0 +1,16 @@
+src/
+_docs/
+.claude/
+.github/
+node_modules/
+*.test.ts
+*.test.tsx
+__tests__/
+__stories__/
+tsconfig.json
+tsup.config.ts
+tailwind.config.ts
+vitest.config.ts
+.gitignore
+.DS_Store
+coverage/
